@@ -70,7 +70,13 @@ img {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   margin-top: 3%;
-  color: var(--footer-font-color);
-  text-align: center;
 }
+
+footer a {
+  color: var(--footer-font-color);
+  text-decoration: none;
+}
+
