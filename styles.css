@@ -1,3 +1,13 @@
+:root {
+  --main-font-color: #4ECCA3;
+  --bg-color: #393E46;
+  --shadow-color: #232931;
+  --footer-font-color: #EEEEEE;
+  font-family: 'Indie Flower', cursive;
+  user-select: none;
+}
+
+
 .container {
   width: 70%;
   margin: auto;
@@ -11,21 +21,20 @@
 }
 
 body {
-  background-color: #393E46;
+  background-color: var(--bg-color);
 }
 
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
+  text-shadow: 5px 0 var(--shadow-color);
   font-size: 8rem;
-  color: #4ECCA3;
+  color: var(--main-font-color);
 }
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
-  font-family: 'Indie Flower', cursive;
+  color: var(--main-font-color);
   text-align: center;
 }
 
@@ -33,10 +42,35 @@ img {
   width: 80%;
 }
 
-footer {
-  margin-top: 5%;
-  color: #EEEEEE;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
+.roll-button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
 
+.roll-button {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color: var(--main-font-color);
+  background: var(--footer-font-color);
+  border: 4px solid var(--main-font-color);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.roll-button:active, .roll-button:hover {
+  background-color: var(--shadow-color);
+  color: var(--footer-font-color);
+  border: 4px solid var(--footer-font-color);
+}
+
+footer {
+  margin-top: 3%;
+  color: var(--footer-font-color);
+  text-align: center;
 }
